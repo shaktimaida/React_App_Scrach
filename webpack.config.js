@@ -3,7 +3,8 @@ const webpack = require('webpack');
 
 module.exports = {
     entry: './src/index.js',
-    mode: 'development',
+    mode: process.env.NODE_ENV === "production" ? "production" : "development",
+    devtool: 'eval-source-map',
     module: {
         rules: [
             {
@@ -24,18 +25,5 @@ module.exports = {
         publicPath: '/dist/',
         filename: 'bundle.js'
     },
-    devServer: {
-        // contentBase
-        static : {
-          directory : path.join(__dirname, "public/")
-        },
-        port: 3000,
-        // publicPath
-        devMiddleware:{
-           publicPath: "http://localhost:3000/dist/",
-        },
-        // hotOnly
-        hot: "only",
-      },
     plugins: [new webpack.HotModuleReplacementPlugin()]
 };
