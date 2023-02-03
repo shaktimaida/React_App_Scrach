@@ -1,0 +1,49 @@
+.todo-item-container{
+    background: #fff;
+    position: relative;
+    border-radius: 8px;
+    margin-top: 15px;
+    box-shadow: 0 4px 8px gray;
+}
+
+.button-container{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+.complete-button{
+    background-color: greenyellow;
+    display: inline-block;
+}
+
+.remove-button{
+    background-color: red;
+    display: inline-block;
+    margin-left: 8px;
+}
+.new-todo-button{
+    background-color: greenyellow;
+    display: inline-block;
+    margin-left: 8px;
+}
+.new-todo-input{
+    font-size: 16px;
+    padding: 8px;
+    border: none;
+    border-bottom: 2px solid gray;
+    border-radius: 8px;
+    outline: none;
+    width: 70%;
+}
+
+.TodoForm-wrapper{
+    border-radius: 8px;
+    text-align: center;
+    padding: 16px;
+    box-shadow: 0px 8px 8px gray;
+}
+.list-wrapper{
+    max-width: 700px;
+    margin: auto;
+}

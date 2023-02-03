@@ -1,9 +1,13 @@
 import React from 'react';
 import './App.css';
+import TodoList from './todo/component/TodoList';
+import Notification from './common/component/Notification';
+import './css/common.css'
 
 const App = () => (
     <div className="App">
-        <h1>Hello, World 5!</h1>
+        <Notification></Notification>
+        <TodoList></TodoList>
     </div>
 );
 
